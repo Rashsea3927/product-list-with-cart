@@ -2,7 +2,7 @@
 
 import { useCartStore } from '@/store/CartStore';
 import Image from 'next/image';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import CartItem from './CartItem';
 import OrderCompleteModal from './OrderCompleteModal';
 
@@ -19,6 +19,10 @@ const Cart = () => {
   const handleCloseModal = () => {
     setIsCompleteOrder(false);
   };
+
+  useEffect(() => {
+    document.body.style.overflowY = isCompleteOrder ? 'hidden' : 'auto';
+  }, [isCompleteOrder]);
 
   return (
     <div className='flex flex-col gap-6 p-6 bg-white rounded-xl lg:sticky lg:top-6 lg:right-0 lg:self-baseline'>

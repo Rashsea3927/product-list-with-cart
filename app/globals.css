@@ -11,14 +11,7 @@
   --color-rose-50: hsl(20, 50%, 98%);
   --color-green-300: hsl(159, 69%, 38%);
 
-  /* --breakpoint-xs: 23.4375rem; 375px */
-
   /* Max-width */
-  --container-mobile: 20.4375rem; /* 327px */
-  --container-xs: 32rem; /* 512px */
-  --container-sm: 36rem; /* 576px */
-  --container-md: 43rem; /* 688px */
-  --container-lg: 59rem; /* 944px */
   --container-xl: 76rem; /* 1216px */
 }
 

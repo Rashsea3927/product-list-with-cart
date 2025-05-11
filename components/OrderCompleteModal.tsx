@@ -13,7 +13,7 @@ const OrderCompleteModal = ({ closeModal }: { closeModal: () => void }) => {
 
   return (
     <>
-      <div className='fixed z-30 left-0 bottom-0 w-full flex flex-col gap-8 pt-10 px-6 pb-4 bg-white rounded-tl-[40px] rounded-tr-[40px] sm:bottom-none sm:left-1/2 sm:top-1/2 sm:bottom-auto sm:-translate-1/2 sm:max-w-sm sm:rounded-xl sm:p-10 md:max-w-md lg:max-w-[572px]'>
+      <div className='fixed z-30 left-0 bottom-0 w-full h-[80%] overflow-y-auto flex flex-col gap-8 pt-10 px-6 pb-4 bg-white rounded-tl-[40px] rounded-tr-[40px] sm:bottom-none sm:left-1/2 sm:top-1/2 sm:bottom-auto sm:-translate-1/2 sm:max-w-sm sm:rounded-xl sm:p-10 md:max-w-md lg:max-w-[572px]'>
         <div>
           <Image src='/assets/icons/icon-order-confirmed.svg' className='mb-6' width={48} height={48} alt='' />
           <h2 className='text-preset-1 text-rose-900 mb-2'>Order Confirmed</h2>
